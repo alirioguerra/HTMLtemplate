@@ -1,0 +1,43 @@
+//  colors
+$color-1: #122512;
+$color-2: #c4f043;
+$color-3: #825b8c;
+$color-4: #f5f8dd;
+$color-5: #fdffd3;
+$text-decoration: #0096ac;
+
+//  typos
+@mixin typePrimary($weight: 400, $size: 20) {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: $weight;
+  @if $size == 20 {
+    font-size: 1.15em;
+  }
+  @if $size == 60 {
+    font-size: 3.35em;
+  }
+}
+
+// radius
+@mixin radius($radius: 10px) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+// breakpoints
+$breakpoints: (
+  'cel': 580px,
+  'tab': 770px,
+);
+@mixin bp($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

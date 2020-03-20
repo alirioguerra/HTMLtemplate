@@ -1,0 +1,14 @@
+// GLOBAL
+@import '../../node_modules/bulma/bulma.sass';
+@import 'global/variables-mixins';
+@import 'global/reset';
+@import 'global/global';
+
+// PLUGINS
+
+// COMPONENTS
+@import 'components/header';
+@import 'components/footer';
+
+// PAGES
+@import 'pages/index';
