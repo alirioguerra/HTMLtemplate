@@ -6,8 +6,7 @@
 
           npm install
 
-    or
-    yarn add
+          yarn add
 
 ## Usage
 
