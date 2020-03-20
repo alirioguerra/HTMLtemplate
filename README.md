@@ -10,4 +10,8 @@
 
 ##### CSS & JS
 
-    Run "gulp" command in terminal on **  project folder  ** to watch files in ** assets folder **
+    Run "gulp" command in terminal on project root folder to watch files in assets folders
+
+## TODO
+
+- [ ] Deploy
