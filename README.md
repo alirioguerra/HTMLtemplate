@@ -4,7 +4,7 @@
 
 1.  Install Node dependencies
 
-        npm install or yarn add
+        npm install or yarn
 
 ## Usage
 
